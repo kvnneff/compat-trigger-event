@@ -1,8 +1,8 @@
 {
-  "name": "trigger-event",
-  "repo": "adamsanderson/trigger-event",
+  "name": "compat-trigger-event",
+  "repo": "kvnneff/compat-trigger-event",
   "description": "Trigger native DOM events",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "keywords": ["event", "events", "dom", "trigger"],
   "dependencies": {},
   "development": {

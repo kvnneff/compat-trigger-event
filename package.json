@@ -1,0 +1,26 @@
+{
+  "name": "compat-trigger-event",
+  "version": "1.0.0",
+  "description": "Trigger native DOM events. This is primarily useful for testing, or for triggering common DOM events such as the change event for custom components.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run duo-test && npm run node-test",
+    "duo-test": "duo-tester phantomjs",
+    "node-test": "mochify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kvnneff/compat-trigger-event.git"
+  },
+  "author": "Kevin Neff <kvnneff@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kvnneff/compat-trigger-event/issues"
+  },
+  "homepage": "https://github.com/kvnneff/compat-trigger-event#readme",
+  "devDependencies": {
+    "component-event": "^0.1.4",
+    "duo-tester": "^0.1.1",
+    "mochify": "^2.13.0"
+  }
+}

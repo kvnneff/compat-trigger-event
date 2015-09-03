@@ -1,13 +1,21 @@
-# trigger-event
+# compat-trigger-event
 
-Trigger native DOM events.  This is primarily useful for testing, or for 
-triggering common DOM events such as the `change` event for custom components. 
+[![npm][npm-image]][npm-url]
+[![travis][travis-image]][travis-url]
+
+[npm-image]: https://img.shields.io/npm/v/compat-trigger-event.svg?style=flat-square
+[npm-url]: https://www.npmjs.com/package/compat-trigger-event
+[travis-image]: https://img.shields.io/travis/kvnneff/compat-trigger-event.svg?style=flat-square
+[travis-url]: https://travis-ci.org/kvnneff/compat-trigger-event
+
+[trigger-event](https://github.com/adamsanderson/trigger-event) forked to ensure compatibility with both Duo and Browserify.
+
+Trigger native DOM events.  This is primarily useful for testing, or for
+triggering common DOM events such as the `change` event for custom components.
 
 ## Installation
- 
-    component install adamsanderson/trigger-event
 
-See [component](https://github.com/component/component#component) for more information.
+    npm install compat-trigger-event
 
 ## API
 
@@ -16,7 +24,7 @@ See [component](https://github.com/component/component#component) for more infor
 Triggers the `name` event on `el`.  Options may be passed in to customize the event.
 
 HTMLEvents support the following options:
-    
+
     bubbles
     cancelable
 
@@ -32,7 +40,7 @@ MouseEvents support the following options:
     shiftKey
     metaKey
     button (mouse button)
-    
+
 Any other event will be triggered as a [CustomEvent](https://developer.mozilla.org/en-US/docs/DOM/Event/CustomEvent).
 
 See the [W3C Event Spec](http://www.w3.org/TR/DOM-Level-2-Events/events.html) for more details.
@@ -44,15 +52,8 @@ types for supported events.
 
 This is loosely based on [kangax](https://github.com/kangax)'s [event.simulate.js](https://github.com/kangax/protolicious/blob/master/event.simulate.js).
 
-Contributions from: 
+Contributions from:
 
 * [Tim Oxley](https://github.com/timoxley)
 * [Manuel Stofer](https://github.com/manuelstofer)
 * [John Syrinek](https://github.com/johntron)
-
-## License 
-MIT
-
----
-
-Adam Sanderson - http://monkeyandcrow.com
